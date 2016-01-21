@@ -49,27 +49,164 @@ namespace RPSLS
 
                     if (computerShoot == Shoot.Rock)
                     {
+                        MessageBox.Show("Computer shoots... ROCK.\n Rock covers Paper." );
                         PlayerWins();
                     }
 
                     else if (computerShoot == Shoot.Lizard)
                     {
+                        MessageBox.Show("Computer shoots... LIZARD.\n Lizard eats Paper.");
                         PlayerLoses();
                     }
 
                     else if (computerShoot == Shoot.Spock)
                     {
+                        MessageBox.Show("Computer shoots... SPOCK.\n Paper disproves Spock.");
                         PlayerWins();
                     }
 
                     else if (computerShoot == Shoot.Scissors)
                     {
+                        MessageBox.Show("Computer shoots... SCISSORS.\n Scissors cuts Paper.");
                         PlayerLoses();
                     }
 
                     else if (computerShoot == Shoot.Paper)
                     {
+                        MessageBox.Show("Computer shoots... PAPER.\n Paper gets stapled with Paper.");
                         PlayerDraws();
+                    }
+                    break;
+
+                case Shoot.Rock:
+
+                    if (computerShoot == Shoot.Rock)
+                    {
+                        MessageBox.Show("Computer shoots... ROCK.\n Rock does nothing sitting next to another Rock.");
+                        PlayerDraws();
+                    }
+
+                    else if (computerShoot == Shoot.Lizard)
+                    {
+                        MessageBox.Show("Computer shoots... LIZARD.\n Rock crushes Lizard.");
+                        PlayerWins();
+                    }
+
+                    else if (computerShoot == Shoot.Spock)
+                    {
+                        MessageBox.Show("Computer shoots... SPOCK.\n Spock vaporizes Rock.");
+                        PlayerLoses();
+                    }
+
+                    else if (computerShoot == Shoot.Scissors)
+                    {
+                        MessageBox.Show("Computer shoots... SCISSORS.\n Rock crushes Scissors.");
+                        PlayerWins();
+                    }
+
+                    else if (computerShoot == Shoot.Paper)
+                    {
+                        MessageBox.Show("Computer shoots... PAPER.\n Rock covers Paper.");
+                        PlayerLoses();
+                    }
+                    break;
+
+                case Shoot.Scissors:
+
+                    if (computerShoot == Shoot.Rock)
+                    {
+                        MessageBox.Show("Computer shoots... ROCK.\n Rock crushes Scissors.");
+                        PlayerLoses();
+                    }
+
+                    else if (computerShoot == Shoot.Lizard)
+                    {
+                        MessageBox.Show("Computer shoots... LIZARD.\n Scissors decapites Lizard.");
+                        PlayerWins();
+                    }
+
+                    else if (computerShoot == Shoot.Spock)
+                    {
+                        MessageBox.Show("Computer shoots... SPOCK.\n Spock smashes Scissors.");
+                        PlayerLoses();
+                    }
+
+                    else if (computerShoot == Shoot.Scissors)
+                    {
+                        MessageBox.Show("Computer shoots... SCISSORS.\n Scissors spends time scissoring the other Scissor.");
+                        PlayerDraws();
+                    }
+
+                    else if (computerShoot == Shoot.Paper)
+                    {
+                        MessageBox.Show("Computer shoots... PAPER.\n Scissors cut Paper.");
+                        PlayerWins();
+                    }
+                    break;
+
+                case Shoot.Lizard:
+
+                    if (computerShoot == Shoot.Rock)
+                    {
+                        MessageBox.Show("Computer shoots... ROCK.\n Rock crushes Lizard.");
+                        PlayerLoses();
+                    }
+
+                    else if (computerShoot == Shoot.Lizard)
+                    {
+                        MessageBox.Show("Computer shoots... LIZARD.\n Lizard procreats with Lizard to form Godzilla.");
+                        PlayerDraws();
+                    }
+
+                    else if (computerShoot == Shoot.Spock)
+                    {
+                        MessageBox.Show("Computer shoots... SPOCK.\n Lizard poisons Spock.");
+                        PlayerWins();
+                    }
+
+                    else if (computerShoot == Shoot.Scissors)
+                    {
+                        MessageBox.Show("Computer shoots... SCISSORS.\n Scissors decapites Lizard.");
+                        PlayerLoses();
+                    }
+
+                    else if (computerShoot == Shoot.Paper)
+                    {
+                        MessageBox.Show("Computer shoots... PAPER.\n Lizard eats Paper.");
+                        PlayerWins();
+                    }
+                    break;
+
+                case Shoot.Spock:
+
+                    if (computerShoot == Shoot.Rock)
+                    {
+                        MessageBox.Show("Computer shoots... ROCK.\n Spock vaporizes Rock.");
+                        PlayerWins();
+                    }
+
+                    else if (computerShoot == Shoot.Lizard)
+                    {
+                        MessageBox.Show("Computer shoots... LIZARD.\n Lizard poisons Spock.");
+                        PlayerLoses();
+                    }
+
+                    else if (computerShoot == Shoot.Spock)
+                    {
+                        MessageBox.Show("Computer shoots... SPOCK.\n Spock mindmelds with the other Spock to create an alternate timeline with OK movies.");
+                        PlayerDraws();
+                    }
+
+                    else if (computerShoot == Shoot.Scissors)
+                    {
+                        MessageBox.Show("Computer shoots... SCISSORS.\n Spock smashes Scissors.");
+                        PlayerWins();
+                    }
+
+                    else if (computerShoot == Shoot.Paper)
+                    {
+                        MessageBox.Show("Computer shoots... PAPER.\n Paper disproves Spock.");
+                        PlayerLoses();
                     }
                     break;
 
