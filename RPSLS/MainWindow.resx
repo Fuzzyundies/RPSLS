@@ -117,115 +117,287 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Rock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 134</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FlavorText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="Rock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="FlavorText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="FlavorText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="FlavorText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 140</value>
+  </data>
+  <data name="FlavorText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 57</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Rock.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="FlavorText.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="Rock.Text" xml:space="preserve">
-    <value>Rock</value>
+  <data name="FlavorText.Text" xml:space="preserve">
+    <value>Flavor Text</value>
   </data>
-  <data name="&gt;&gt;Rock.Name" xml:space="preserve">
-    <value>Rock</value>
+  <data name="FlavorText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
   </data>
-  <data name="&gt;&gt;Rock.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;FlavorText.Name" xml:space="preserve">
+    <value>FlavorText</value>
   </data>
-  <data name="&gt;&gt;Rock.Parent" xml:space="preserve">
+  <data name="&gt;&gt;FlavorText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FlavorText.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Rock.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;FlavorText.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Player1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Player1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Player1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="Player1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="Player1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Player1.Text" xml:space="preserve">
+    <value>Player 1</value>
+  </data>
+  <data name="&gt;&gt;Player1.Name" xml:space="preserve">
+    <value>Player1</value>
+  </data>
+  <data name="&gt;&gt;Player1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Player1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Player1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Player2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="Player2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Player2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Player2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 13</value>
+  </data>
+  <data name="Player2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="Player2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Player2.Text" xml:space="preserve">
+    <value>Player 2</value>
+  </data>
+  <data name="Player2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;Player2.Name" xml:space="preserve">
+    <value>Player2</value>
+  </data>
+  <data name="&gt;&gt;Player2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Player2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Player2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Player1WinCount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Player1WinCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Player1WinCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 37</value>
+  </data>
+  <data name="Player1WinCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 13</value>
+  </data>
+  <data name="Player1WinCount.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="Player1WinCount.Text" xml:space="preserve">
+    <value>Player1WinCount</value>
+  </data>
+  <data name="&gt;&gt;Player1WinCount.Name" xml:space="preserve">
+    <value>Player1WinCount</value>
+  </data>
+  <data name="&gt;&gt;Player1WinCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Player1WinCount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Player1WinCount.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="Paper.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 56</value>
+  <data name="Player2WinCount.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
-  <data name="Paper.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="Player2WinCount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="Paper.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="Player2WinCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="Paper.Text" xml:space="preserve">
-    <value>Paper</value>
+  <data name="Player2WinCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 37</value>
   </data>
-  <data name="&gt;&gt;Paper.Name" xml:space="preserve">
-    <value>Paper</value>
+  <data name="Player2WinCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 13</value>
   </data>
-  <data name="&gt;&gt;Paper.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Player2WinCount.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="&gt;&gt;Paper.Parent" xml:space="preserve">
+  <data name="Player2WinCount.Text" xml:space="preserve">
+    <value>Player2WinCount</value>
+  </data>
+  <data name="Player2WinCount.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;Player2WinCount.Name" xml:space="preserve">
+    <value>Player2WinCount</value>
+  </data>
+  <data name="&gt;&gt;Player2WinCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Player2WinCount.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Paper.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Player2WinCount.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="Scissors.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 134</value>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="Scissors.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14pt</value>
   </data>
-  <data name="Scissors.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="Scissors.Text" xml:space="preserve">
-    <value>Scissors</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 85</value>
   </data>
-  <data name="&gt;&gt;Scissors.Name" xml:space="preserve">
-    <value>Scissors</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 24</value>
   </data>
-  <data name="&gt;&gt;Scissors.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
-  <data name="&gt;&gt;Scissors.Parent" xml:space="preserve">
+  <data name="label1.Text" xml:space="preserve">
+    <value>VERSUS</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Scissors.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="Lizard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 234</value>
+  <data name="Player2Shoot.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="Lizard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="Player2Shoot.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="Lizard.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="Player2Shoot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>289, 65</value>
   </data>
-  <data name="Lizard.Text" xml:space="preserve">
-    <value>Lizard</value>
+  <data name="Player2Shoot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 72</value>
   </data>
-  <data name="&gt;&gt;Lizard.Name" xml:space="preserve">
-    <value>Lizard</value>
+  <data name="Player2Shoot.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <data name="&gt;&gt;Lizard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Player2Shoot.Name" xml:space="preserve">
+    <value>Player2Shoot</value>
   </data>
-  <data name="&gt;&gt;Lizard.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Player2Shoot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Player2Shoot.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Lizard.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Player2Shoot.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Player1Shoot.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="Player1Shoot.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Player1Shoot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 65</value>
+  </data>
+  <data name="Player1Shoot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 72</value>
+  </data>
+  <data name="Player1Shoot.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;Player1Shoot.Name" xml:space="preserve">
+    <value>Player1Shoot</value>
+  </data>
+  <data name="&gt;&gt;Player1Shoot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Player1Shoot.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Player1Shoot.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="Spock.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="Spock.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="Spock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 234</value>
+    <value>229, 277</value>
   </data>
   <data name="Spock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>72, 72</value>
   </data>
   <data name="Spock.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="Spock.Text" xml:space="preserve">
     <value>Spock</value>
+  </data>
+  <data name="Spock.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
   </data>
   <data name="&gt;&gt;Spock.Name" xml:space="preserve">
     <value>Spock</value>
@@ -237,7 +409,139 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Spock.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="Lizard.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="Lizard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Lizard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 278</value>
+  </data>
+  <data name="Lizard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 72</value>
+  </data>
+  <data name="Lizard.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Lizard.Text" xml:space="preserve">
+    <value>Lizard</value>
+  </data>
+  <data name="Lizard.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;Lizard.Name" xml:space="preserve">
+    <value>Lizard</value>
+  </data>
+  <data name="&gt;&gt;Lizard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Lizard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Lizard.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Scissors.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="Scissors.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Scissors.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 200</value>
+  </data>
+  <data name="Scissors.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 72</value>
+  </data>
+  <data name="Scissors.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Scissors.Text" xml:space="preserve">
+    <value>Scissors</value>
+  </data>
+  <data name="Scissors.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;Scissors.Name" xml:space="preserve">
+    <value>Scissors</value>
+  </data>
+  <data name="&gt;&gt;Scissors.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Scissors.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Scissors.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="Paper.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="Paper.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Paper.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 200</value>
+  </data>
+  <data name="Paper.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 72</value>
+  </data>
+  <data name="Paper.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Paper.Text" xml:space="preserve">
+    <value>Paper</value>
+  </data>
+  <data name="Paper.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;Paper.Name" xml:space="preserve">
+    <value>Paper</value>
+  </data>
+  <data name="&gt;&gt;Paper.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Paper.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Paper.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="Rock.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="Rock.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Rock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 200</value>
+  </data>
+  <data name="Rock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 72</value>
+  </data>
+  <data name="Rock.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="Rock.Text" xml:space="preserve">
+    <value>Rock</value>
+  </data>
+  <data name="Rock.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;Rock.Name" xml:space="preserve">
+    <value>Rock</value>
+  </data>
+  <data name="&gt;&gt;Rock.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Rock.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Rock.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -251,12 +555,11 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>384, 361</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Test</value>
+    <value>Rock, Paper, Scissors, Lizard, Spock</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainWindow</value>

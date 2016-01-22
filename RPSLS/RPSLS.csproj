@@ -54,6 +54,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceRPSLS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceRPSLS.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +71,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ResourceRPSLS.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceRPSLS.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +87,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\32x32\Lizard_32.png" />
+    <Content Include="Resources\32x32\Paper_32.png" />
+    <Content Include="Resources\32x32\Rock_32.png" />
+    <Content Include="Resources\32x32\Scissors_32.png" />
+    <Content Include="Resources\32x32\Spock_32.png" />
+    <Content Include="Resources\64x64\Lizard_64.png" />
+    <Content Include="Resources\64x64\Paper_64.png" />
+    <Content Include="Resources\64x64\Rock_64.png" />
+    <Content Include="Resources\64x64\Scissors_64.png" />
+    <Content Include="Resources\64x64\Spock_64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

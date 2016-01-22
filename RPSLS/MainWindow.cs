@@ -11,6 +11,21 @@ using System.Windows.Forms;
 namespace RPSLS
 {
 
+    /*
+        Homework for 1/21 :
+        Finish up flavor text for each possible shoot.
+        Add win counter to each player.
+
+    */
+
+    /*
+        Have icons for each action. Rock/Paper/Scissors/Lizard/Spock
+        Have the "Versus" screen at the top with what the player shoots.
+        Put flavor text beneath versus for who wins.
+        Have a counter for which one is winning in a session.
+        PVP mode - insert names on both sides.
+        PVE mode with computer tallying what the player chooses and then giving weighted RNG toward beating that.
+    */
     public enum Shoot
     {
         Rock = 1, //Automatically incremetes by 1.
@@ -22,9 +37,13 @@ namespace RPSLS
 
     public partial class MainWindow : Form
     {
+
+        List<Shoot> _playerShoots; //Records every shoot a player does.
+
         public MainWindow()
         {
             InitializeComponent();
+            _playerShoots = new List<Shoot>(); //Adds every shoot recorded to a list.
         }
 
         private void GameButtonClick(object sender, EventArgs e)
@@ -43,37 +62,68 @@ namespace RPSLS
 
             // MessageBox.Show(playerShoot.ToString());
 
-            switch(playerShoot)
+            switch (computerShoot)
             {
                 case Shoot.Paper:
+                    Player2Shoot.BackgroundImage = RPSLS.ResourceRPSLS.Paper_64;
+                    break;
 
+                case Shoot.Rock:
+                    Player2Shoot.BackgroundImage = RPSLS.ResourceRPSLS.Rock_64;
+                    break;
+
+                case Shoot.Scissors:
+                    Player2Shoot.BackgroundImage = RPSLS.ResourceRPSLS.Scissors_64;
+                    break;
+
+                case Shoot.Lizard:
+                    Player2Shoot.BackgroundImage = RPSLS.ResourceRPSLS.Lizard_64;
+                    break;
+
+                case Shoot.Spock:
+                    Player2Shoot.BackgroundImage = RPSLS.ResourceRPSLS.Spock_64;
+                    break;
+
+                default:
+                    break;
+            }
+
+            switch (playerShoot)
+            {
+                case Shoot.Paper:
+                    Player1Shoot.BackgroundImage = RPSLS.ResourceRPSLS.Paper_64;
                     if (computerShoot == Shoot.Rock)
                     {
-                        MessageBox.Show("Computer shoots... ROCK.\n Rock covers Paper." );
+                        FlavorText.Text = "Computer shoots... Rock.\n Rock covers Paper.";
+                        //MessageBox.Show("Computer shoots... ROCK.\n Rock covers Paper." );
                         PlayerWins();
                     }
 
                     else if (computerShoot == Shoot.Lizard)
                     {
-                        MessageBox.Show("Computer shoots... LIZARD.\n Lizard eats Paper.");
+                        FlavorText.Text = "Computer shoots... Lizard.\n Lizard eats Paper.";
+                        //MessageBox.Show("Computer shoots... LIZARD.\n Lizard eats Paper.");
                         PlayerLoses();
                     }
 
                     else if (computerShoot == Shoot.Spock)
                     {
-                        MessageBox.Show("Computer shoots... SPOCK.\n Paper disproves Spock.");
+                        FlavorText.Text = "Computer shoots... Spock.\n Paper disproves Spock.";
+                        //MessageBox.Show("Computer shoots... SPOCK.\n Paper disproves Spock.");
                         PlayerWins();
                     }
 
                     else if (computerShoot == Shoot.Scissors)
                     {
-                        MessageBox.Show("Computer shoots... SCISSORS.\n Scissors cuts Paper.");
+                        FlavorText.Text = "Computer shoots... Paper.\n Scissors cuts Paper.";
+                        //MessageBox.Show("Computer shoots... SCISSORS.\n Scissors cuts Paper.");
                         PlayerLoses();
                     }
 
                     else if (computerShoot == Shoot.Paper)
                     {
-                        MessageBox.Show("Computer shoots... PAPER.\n Paper gets stapled with Paper.");
+                        FlavorText.Text = "Computer shoots... Paper.\n Paper gets stacked with Paper.";
+                        //MessageBox.Show("Computer shoots... PAPER.\n Paper gets stapled with Paper.");
                         PlayerDraws();
                     }
                     break;
@@ -154,7 +204,7 @@ namespace RPSLS
 
                     else if (computerShoot == Shoot.Lizard)
                     {
-                        MessageBox.Show("Computer shoots... LIZARD.\n Lizard procreats with Lizard to form Godzilla.");
+                        MessageBox.Show("Computer shoots... LIZARD.\n Lizard procreates with Lizard to give birth to Godzilla.");
                         PlayerDraws();
                     }
 
@@ -193,7 +243,7 @@ namespace RPSLS
 
                     else if (computerShoot == Shoot.Spock)
                     {
-                        MessageBox.Show("Computer shoots... SPOCK.\n Spock mindmelds with the other Spock to create an alternate timeline with OK movies.");
+                        MessageBox.Show("Computer shoots... SPOCK.\n Spock mindmelds with the other Spock to create an alternate timeline with 'Meh' movies.");
                         PlayerDraws();
                     }
 
@@ -217,17 +267,23 @@ namespace RPSLS
 
         private void PlayerWins()
         {
-            MessageBox.Show("You Win!");
+            Player1Shoot.BorderStyle = BorderStyle.FixedSingle;
+            Player2Shoot.BorderStyle = BorderStyle.None;
+            //MessageBox.Show("You Win!");
         }
 
         private void PlayerLoses()
         {
-            MessageBox.Show("You Lose!");
+            Player2Shoot.BorderStyle = BorderStyle.FixedSingle;
+            Player1Shoot.BorderStyle = BorderStyle.None;
+            //MessageBox.Show("You Lose!");
         }
 
         private void PlayerDraws()
         {
-            MessageBox.Show("You Draw!");
+            Player1Shoot.BorderStyle = BorderStyle.FixedSingle;
+            Player2Shoot.BorderStyle = BorderStyle.FixedSingle;
+            //MessageBox.Show("You Draw!");
         }
     }
 }
