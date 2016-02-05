@@ -51,21 +51,164 @@ namespace RPSLS
             UpdateWinCounters();
         }
 
+        private Shoot PredictPlayerShoot()
+        {
+            double rockShoot = 0;
+            double paperShoot = 0;
+            double scissorsShoot = 0;
+            double lizardShoot = 0;
+            double spockShoot = 0;
+
+            foreach (Shoot ps in _playerShoots)
+            {
+                switch (ps)
+                {
+                    case Shoot.Rock:
+                        rockShoot++;
+                        break;
+
+                    case Shoot.Paper:
+                        paperShoot++;
+                        break;
+
+                    case Shoot.Scissors:
+                        scissorsShoot++;
+                        break;
+
+                    case Shoot.Lizard:
+                        lizardShoot++;
+                        break;
+
+                    case Shoot.Spock:
+                        spockShoot++;
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+
+            double rockPCT = rockShoot / _playerShoots.Count;
+
+            double paperPCT = paperShoot / _playerShoots.Count;
+
+            double scissorsPCT = scissorsShoot / _playerShoots.Count;
+
+            double lizardPCT = lizardShoot / _playerShoots.Count;
+
+            double spockPCT = spockShoot / _playerShoots.Count;
+
+            Shoot projectedShoot;
+
+
+            Random rng = new Random();
+
+            double randomNumber = rng.NextDouble();
+
+            if (randomNumber < rockPCT)
+            {
+                projectedShoot = Shoot.Rock;
+            }
+
+            else if (randomNumber < rockPCT + paperPCT)
+            {
+                projectedShoot = Shoot.Paper;
+            }
+
+            else if (randomNumber < rockPCT + paperPCT + scissorsPCT)
+            {
+                projectedShoot = Shoot.Scissors;
+            }
+
+            else if (randomNumber < rockPCT + paperPCT + scissorsPCT + lizardPCT)
+            {
+                projectedShoot = Shoot.Lizard;
+            }
+
+            else
+            {
+                projectedShoot = Shoot.Spock;
+            }
+
+            return projectedShoot;
+
+        }
+
+        private Shoot BeatThis(Shoot opposingPlay)
+        {
+            Random rng = new Random();
+
+            int coinFlip = rng.Next(0, 2);
+
+            switch (opposingPlay)
+            {
+                case Shoot.Rock:
+                    if (coinFlip == 0)
+                        return Shoot.Paper;
+                    else
+                        return Shoot.Spock;
+                    break;
+
+                case Shoot.Paper:
+                    if (coinFlip == 0)
+                        return Shoot.Scissors;
+                    else
+                        return Shoot.Lizard;
+                    break;
+
+                case Shoot.Scissors:
+                    if (coinFlip == 0)
+                        return Shoot.Rock;
+                    else
+                        return Shoot.Spock;
+                    break;
+
+                case Shoot.Lizard:
+                    if (coinFlip == 0)
+                        return Shoot.Rock;
+                    else
+                        return Shoot.Scissors;
+                    break;
+
+                case Shoot.Spock:
+                    if (coinFlip == 0)
+                        return Shoot.Paper;
+                    else
+                        return Shoot.Lizard;
+                    break;
+
+                default:
+                    return 0;
+                    break;
+            }
+        }
+
+
         private void GameButtonClick(object sender, EventArgs e)
         {
-            // int v = (int)(sender as Button).Tag;
-
             int v = Convert.ToInt32((sender as Button).Tag); //Takes the tag, converting to a number.
 
             Shoot playerShoot = (Shoot)v;
 
-            Random rng = new Random();
+            _playerShoots.Add(playerShoot);
 
-            int randomNumber = rng.Next(1, 6);
+            Shoot computerShoot;
 
-            Shoot computerShoot = (Shoot)randomNumber;
+            if (_playerShoots.Count < 5)
+            {
 
-            // MessageBox.Show(playerShoot.ToString());
+                Random rng = new Random();
+
+                int randomNumber = rng.Next(1, 6);
+
+                computerShoot = (Shoot)randomNumber;
+            }
+
+            else
+            {
+                computerShoot = BeatThis(PredictPlayerShoot());
+            }
+
 
             switch (computerShoot)
             {
@@ -143,7 +286,7 @@ namespace RPSLS
 
                     else if (computerShoot == Shoot.Lizard)
                     {
-                        FlavorText.Text = "Computer shoots... Paper.\n Paper gets stacked with Paper.";
+                        FlavorText.Text = "Computer shoots... Lizard.\n Rock crushes Lizard.";
                         PlayerWins();
                     }
 
