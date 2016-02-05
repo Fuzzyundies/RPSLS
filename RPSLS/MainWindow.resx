@@ -186,106 +186,106 @@
   <data name="&gt;&gt;Player1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="Player2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="Computer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="Player2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Computer.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Player2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Computer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Player2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Computer.Location" type="System.Drawing.Point, System.Drawing">
     <value>330, 13</value>
   </data>
-  <data name="Player2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 13</value>
+  <data name="Computer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
   </data>
-  <data name="Player2.TabIndex" type="System.Int32, mscorlib">
+  <data name="Computer.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="Player2.Text" xml:space="preserve">
-    <value>Player 2</value>
+  <data name="Computer.Text" xml:space="preserve">
+    <value>Computer</value>
   </data>
-  <data name="Player2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="Computer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
   </data>
-  <data name="&gt;&gt;Player2.Name" xml:space="preserve">
-    <value>Player2</value>
+  <data name="&gt;&gt;Computer.Name" xml:space="preserve">
+    <value>Computer</value>
   </data>
-  <data name="&gt;&gt;Player2.Type" xml:space="preserve">
+  <data name="&gt;&gt;Computer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Player2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Computer.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Player2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Computer.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="Player1WinCount.AutoSize" type="System.Boolean, mscorlib">
+  <data name="PlayerWinCounter.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Player1WinCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="PlayerWinCounter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Player1WinCount.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="PlayerWinCounter.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 37</value>
   </data>
-  <data name="Player1WinCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 13</value>
+  <data name="PlayerWinCounter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
   </data>
-  <data name="Player1WinCount.TabIndex" type="System.Int32, mscorlib">
+  <data name="PlayerWinCounter.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="Player1WinCount.Text" xml:space="preserve">
-    <value>Player1WinCount</value>
+  <data name="PlayerWinCounter.Text" xml:space="preserve">
+    <value>PlayerWinCounter</value>
   </data>
-  <data name="&gt;&gt;Player1WinCount.Name" xml:space="preserve">
-    <value>Player1WinCount</value>
+  <data name="&gt;&gt;PlayerWinCounter.Name" xml:space="preserve">
+    <value>PlayerWinCounter</value>
   </data>
-  <data name="&gt;&gt;Player1WinCount.Type" xml:space="preserve">
+  <data name="&gt;&gt;PlayerWinCounter.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Player1WinCount.Parent" xml:space="preserve">
+  <data name="&gt;&gt;PlayerWinCounter.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Player1WinCount.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;PlayerWinCounter.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="Player2WinCount.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="ComputerWinCounter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="Player2WinCount.AutoSize" type="System.Boolean, mscorlib">
+  <data name="ComputerWinCounter.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Player2WinCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="ComputerWinCounter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Player2WinCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>286, 37</value>
+  <data name="ComputerWinCounter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 37</value>
   </data>
-  <data name="Player2WinCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 13</value>
+  <data name="ComputerWinCounter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 13</value>
   </data>
-  <data name="Player2WinCount.TabIndex" type="System.Int32, mscorlib">
+  <data name="ComputerWinCounter.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="Player2WinCount.Text" xml:space="preserve">
-    <value>Player2WinCount</value>
+  <data name="ComputerWinCounter.Text" xml:space="preserve">
+    <value>ComputerWinCounter</value>
   </data>
-  <data name="Player2WinCount.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="ComputerWinCounter.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
   </data>
-  <data name="&gt;&gt;Player2WinCount.Name" xml:space="preserve">
-    <value>Player2WinCount</value>
+  <data name="&gt;&gt;ComputerWinCounter.Name" xml:space="preserve">
+    <value>ComputerWinCounter</value>
   </data>
-  <data name="&gt;&gt;Player2WinCount.Type" xml:space="preserve">
+  <data name="&gt;&gt;ComputerWinCounter.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Player2WinCount.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ComputerWinCounter.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Player2WinCount.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ComputerWinCounter.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">

@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.FlavorText = new System.Windows.Forms.Label();
             this.Player1 = new System.Windows.Forms.Label();
-            this.Player2 = new System.Windows.Forms.Label();
-            this.Player1WinCount = new System.Windows.Forms.Label();
-            this.Player2WinCount = new System.Windows.Forms.Label();
+            this.Computer = new System.Windows.Forms.Label();
+            this.PlayerWinCounter = new System.Windows.Forms.Label();
+            this.ComputerWinCounter = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Player2Shoot = new System.Windows.Forms.PictureBox();
             this.Player1Shoot = new System.Windows.Forms.PictureBox();
@@ -56,20 +56,20 @@
             resources.ApplyResources(this.Player1, "Player1");
             this.Player1.Name = "Player1";
             // 
-            // Player2
+            // Computer
             // 
-            resources.ApplyResources(this.Player2, "Player2");
-            this.Player2.Name = "Player2";
+            resources.ApplyResources(this.Computer, "Computer");
+            this.Computer.Name = "Computer";
             // 
-            // Player1WinCount
+            // PlayerWinCounter
             // 
-            resources.ApplyResources(this.Player1WinCount, "Player1WinCount");
-            this.Player1WinCount.Name = "Player1WinCount";
+            resources.ApplyResources(this.PlayerWinCounter, "PlayerWinCounter");
+            this.PlayerWinCounter.Name = "PlayerWinCounter";
             // 
-            // Player2WinCount
+            // ComputerWinCounter
             // 
-            resources.ApplyResources(this.Player2WinCount, "Player2WinCount");
-            this.Player2WinCount.Name = "Player2WinCount";
+            resources.ApplyResources(this.ComputerWinCounter, "ComputerWinCounter");
+            this.ComputerWinCounter.Name = "ComputerWinCounter";
             // 
             // label1
             // 
@@ -140,9 +140,9 @@
             this.Controls.Add(this.Player2Shoot);
             this.Controls.Add(this.Player1Shoot);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Player2WinCount);
-            this.Controls.Add(this.Player1WinCount);
-            this.Controls.Add(this.Player2);
+            this.Controls.Add(this.ComputerWinCounter);
+            this.Controls.Add(this.PlayerWinCounter);
+            this.Controls.Add(this.Computer);
             this.Controls.Add(this.Player1);
             this.Controls.Add(this.FlavorText);
             this.Controls.Add(this.Spock);
@@ -167,9 +167,9 @@
         private System.Windows.Forms.Button Spock;
         private System.Windows.Forms.Label FlavorText;
         private System.Windows.Forms.Label Player1;
-        private System.Windows.Forms.Label Player2;
-        private System.Windows.Forms.Label Player1WinCount;
-        private System.Windows.Forms.Label Player2WinCount;
+        private System.Windows.Forms.Label Computer;
+        private System.Windows.Forms.Label PlayerWinCounter;
+        private System.Windows.Forms.Label ComputerWinCounter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox Player1Shoot;
         private System.Windows.Forms.PictureBox Player2Shoot;
